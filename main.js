@@ -89,7 +89,6 @@ function about_load(r) {
   let about_container = makeElement("div", "about_container", null, r);
   let p1 = makeElement("p", "p1", null, about_container);
   p1.innerText = "So, I had a few plastic gear servos lying around, and I wanted to put them to use somewhere. I felt skeptical using them on an overly complex project, because if they failed me, I’d be sad. Thus, Mr. Battle Cat was born! Inspired by a YouTube video I saw (https://youtu.be/PX7o7X6vCUc?list=LL), and my love for the mobile game Battle Cats. Here’s the 3D model of the chassis, designed on Fusion360: ";
-
   let battle_cat_model = makeElement("img", "battle_cat_model", "about_img", about_container);
   battle_cat_model.src = "battle_cat_gif.gif";
 
