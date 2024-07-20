@@ -175,6 +175,9 @@ function about_load(r) {
   let p12 = makeElement("p", "p12", null, about_container);
   p12.innerText = "In a previous project (Don Quixote), I used a WebSocket system to communicate with the ESP32, controlling the machine. The controls feedback of this system was slightly suboptimal, with chances of delays or cuts in communication. Furthermore, it relied on a WiFi connection, which may not always be guaranteed. As such, I wanted to find an alternative control system. I had a couple PlayStation controllers lying around, and I found out that it was possible to utilize the ESP32’s Bluetooth to connect the controller to such. Thus, a new control system was born! I am happy with the PlayStation controller’s capabilities and hope to make some more projects utilizing it! Anyways, that is all I have to say, hope you liked the project! Here’s a silly little demo video I made of it:";
 
+  let vid = makeElement("div", "gif_about_img", null, about_container);
+  vid.innerHTML = '<video width="320" height="240" controls><source src="mr_battle_cat_vid.mp4" type="video/mp4">The browser does not support videos!</video>';
+
   for (let i = 0; i < 10; i++) makeElement("br", "spacing", null, about_container);
 
   let about_return_btn = makeElement("button", "about_return_btn", null, r);
